@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Friend Dolphin</title>
+</head>
+<style>
+    * {
+        margin:0;
+        padding:0;
+        background: linear-gradient(359.3deg, rgb(196, 214, 252) 1%, rgba(187, 187, 187, 0) 70.9%);
+        
+    }
+    .container {
+        text-align: center;
+        padding: 20px 30px; 
+        margin: 10px 100px;
+    }
+    h1{
+        text-align:center;
+        padding: 10px 0;
+        margin: 12px 0;
+        font-size: 40px;
+        font-weight: 550;
+        color: #0aa0f6;
+        background: none;
+    }
+    h2{
+        text-align:center;
+        padding: 10px 0;
+        font-size: 30px;
+        color: #0aa0f6;
+        background: none;
+    }
+    img {
+        display: block;
+        margin: 20px auto;
+        width: 100%;
+        max-width: 500px;
+        border-radius: 20px;
+        flex-wrap: wrap;
+        
+    }
+    .information {
+        text-align: justify;
+        font-size: 20px;
+        background: none;
+        color: #0d0cb5;
+        line-height: 28px;
+        
+    }
+    .facts {
+        background: none;
+        color: #362391;
+        font-size: 25px;
+        margin-top: 12px;
+    }
+    .facts ul {
+        text-align: justify;
+        background: none;
+        font-size: 20px;
+        padding: 20px 0;
+        margin: 0px;
+        line-height: 28px;
+    }
+    li {
+        background: none;
+        color:#0d0cb5;
+        }
+    a {
+        text-decoration: none;
+        display:block;
+        color: #0962ea;
+        padding-bottom: 10px;;
+    }
+    button {
+        box-shadow: 2px 2px 4px 2px #0c9cee;
+    }
+    .join-club {
+        padding: 10px 18px;
+        margin: 12px auto;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+        font-size: 25px;
+        background: radial-gradient(465px at -15.1% -25%, rgb(17, 130, 193) 0%, rgb(67, 166, 238) 49%, rgb(126, 203, 244) 90.2%);
+        border: 2px solid #57acd0;
+        color: azure;
+        border-radius: 15px;
+        transition: 200ms all ease-in-out;
+    }
+    button:hover {
+        background: white;
+        color:#0962ea;
+    }
+    strong {
+        text-decoration: underline;
+        font-size: 35px;
+        padding: 20px 0;
+        background: none;
+    }
+
+</style>
+<body>
+    <div class="container">
+        <h1>Dolphins are best Human Friend</h1>
+        <hr>
+        <h2>I like Dolphins 🐬 Do you ?</h2>
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/057/963/original/main-qimg-a09be224e62c3b67c65f4201b75b3eee-lq.jpg?1670842745" alt="">
+        <p class="information">
+            Dolphins are incredible. They are socially skilled, intelligent, agile, joyful, and playful creatures that share many emotional similarities with humans. There is an impressive range of different species of dolphin and they all have their own unique identities and characteristics!
+        </p>
+        <div class="facts">
+            <strong>
+                Facts about Dolphin
+            </strong>
+                
+            <ul>
+                <li>
+                    There are currently 42 species of dolphins and seven species of porpoises.
+                </li>
+                <li>               
+                    Dolphins are marine mammals. They must surface to breathe air and give birth to live young.
+                </li>
+                <li>
+                    A dolphin pregnancy last between nine and 16 months. The mother feeds her offspring on milk. The sons and daughters of resident orcas stay with their maternal family for life.
+                </li>
+                <li>
+                    Dolphins eat fish, squid and crustaceans. They do not chew they food but may break it into smaller pieces before swallowing.
+                </li>
+                <li>
+                    All dolphins have conical-shaped teeth. A Risso's dolphin has 14 while a spinner dolphin can have 240.
+                </li>
+                <li>
+                    The orca (killer whale) is the largest dolphin. Hector's dolphin and Franciscana are two of the smallest.
+                </li>
+                <li>
+                    The four river dolphin species inhabit the large waterways of Asia and South America.
+                </li>
+                <li>
+                    Dolphins have an array of vocalisations such as clicks, whistles and squeals which they use for their well-developed communication and echolocation skills.
+                </li>
+                <li>
+                    Lifespan varies from around 20 years in the smaller dolphin species to 80 years or more for larger dolphins such as orcas.
+                </li>
+            </ul>
+            <a href="https://en.wikipedia.org/wiki/Dolphin">To Know More about Dolphins
+                <em>Wikipedia</em>
+            </a>
+            <button class="join-club">Be a Dolphin Friend</button>
+            <br>
+            <span>Coded by Revati 🌟</span>
+        </div>
+    </div>
+    <script>
+        function get(){
+            let name = prompt("What is your name ?");
+            let age = prompt("What is your age?");
+            let choice  = prompt("Do you like Dolphins ?").toLowerCase().trim();
+            if(choice == "yes")
+            {
+                alert(name + "! Welcome to Dolphin🐬 Friends Club");
+                
+            }
+            else {
+                alert(name +"! Sorry you can't join Dolphin Friends Club")
+            }
+        }
+        let dolphin_friend = document.querySelector("button");
+        dolphin_friend.addEventListener("click",get); 
+    </script>
+</body>
+</html>
